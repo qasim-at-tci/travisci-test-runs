@@ -3,6 +3,9 @@ os: linux
 dist: focal
 language: shell
 install: skip
+branches:
+  only:
+    - /^\d+\.\d+(\.\d+)?$/
 script:
   - echo $TRAVIS_BRANCH
   - echo $TRAVIS_TAG
