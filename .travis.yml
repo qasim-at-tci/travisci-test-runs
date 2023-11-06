@@ -3,4 +3,6 @@ os: linux
 dist: focal
 language: shell
 install: skip
-script: true
+script:
+  - echo $TRAVIS_BRANCH
+  - echo $TRAVIS_TAG
